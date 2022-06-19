@@ -1,0 +1,124 @@
+
+body{
+    background-color:#886a08;
+       
+   
+   }
+   
+   .container{
+   
+   
+   background-color:#b18904;
+   
+       width: 400px;
+       height: 400px;
+       
+       position:absolute;
+       transform:translate(-50% , -50%);
+       left:50% ;
+       top: 50% ;
+           border-radius:50%;
+        box-shadow:15px 15px 30px #665800,
+              -15px -15px 30px #ffff00;
+   
+   
+   }
+   
+   .clock{
+   
+       display:flex;
+       
+    align-items:center;
+   
+       width:325px;
+       height:325px;
+       border: 2px solid black;
+       position:absolute;
+       transform:translate(-50% , -50%);
+       left:50% ;
+       top: 50% ;
+   border-radius:50%;
+        background:url(file:///D:/Rohini.programing/images/0-7098_28-collection-of-blank-digital-clock-clipart-high.png);
+       background-size:cover;
+   
+       box-shadow:inset 15px 15px 30px #665800,
+               inset -15px -15px 30px #fff000;
+   justify-content:center;
+          
+       
+   }
+   
+   .hr{
+       width: 150px;
+       height: 150px;
+   
+   }
+   .min{
+       width: 200px;
+       height: 200px;
+   
+   }
+   
+   .sec{
+       width: 250px;
+       height: 250px;
+   }
+   
+   
+   .hr, .min, .sec{
+   position:absolute;
+       
+       position:absolute;
+       display:flex;
+       justify-content:center;
+   
+   
+   
+          
+   }
+   .clock::before {
+   
+       content: '';
+           height: 10px;
+       width:10px;
+       background-color: black;
+       border-radius: 50%;
+           border: 2px solid white;
+       
+   }
+   
+   .hr::before {
+          position:absolute;
+       content:'';
+       width: 3px;
+       height:75px;
+       border: 4px double black;
+       z-index:10;
+   border-radius:25%;
+   border-style:double;
+   }
+    
+   
+   .min::before {
+          position:absolute;
+       content:'';
+       width: 2px;
+       height:100px;
+       border:2px double black;
+       z-index:10;
+   border-radius:25%;
+   border-style:double;
+   }
+   
+   
+   .sec::before {
+          position:absolute;
+       content:'';
+       width: 1px;
+       height:150px;
+       z-index:12;
+   border-radius:25%;
+   border:1px double black;
+   
+   
+   }
